@@ -1,10 +1,10 @@
 class ConditionsService
   def self.analyze_conditions
-    @conditions = HTTParty.get('https://boulder-tubing-api.herokuapp.com/conditions').parsed_response
+    conditions = HTTParty.get('https://boulder-tubing-api.herokuapp.com/conditions').parsed_response
 
-    temperature = @conditions['temperature_f']
-    weather     = @conditions['weather_condition']
-    flow_rate   = @conditions['flow_rate_cfs']
+    temperature = conditions['temperature_f']
+    weather     = conditions['weather_condition']
+    flow_rate   = conditions['flow_rate_cfs']
 
     self.optimal_conditions(temperature, weather, flow_rate) ? "yes" : "no"
   end
