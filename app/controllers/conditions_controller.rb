@@ -4,6 +4,6 @@ class ConditionsController < ApplicationController
   end
 
   def get_conditions
-    @conditions = ConditionsService.new.analyze_conditions
+    @conditions = ConditionsService.analyze_conditions
   end
 end
