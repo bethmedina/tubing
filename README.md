@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a short and very simple app that makes a call out to an API endpoint to determine if the conditions are right for tubing down Boulder Creek.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Things I would like to implement given more time:
+* List the conditions on the page in red if they do not meet the standards for good tubing, and green if they do
+* Tests
+* Find a way to make the API call faster
